@@ -1,0 +1,13 @@
+Short description for GitHub README
+Python String Methods
+This project demonstrates commonly used Python string methods such as:
+upper()
+lower()
+title()
+replace()
+fi
+count()
+startswith()
+endswith()
+These methods are useful for text manipulation and are commonly used in Python programming.
+This is a good beginner project to upload to GitHub while learning Python.
