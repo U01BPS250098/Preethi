@@ -1,0 +1,76 @@
+# Python Operators Program
+
+print("===== PYTHON OPERATORS =====")
+
+# 1. Arithmetic Operators
+print("\n1. Arithmetic Operators")
+a = 10
+b = 5
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponent:", a ** b)
+print("Floor Division:", a // b)
+
+# 2. Comparison Operators
+print("\n2. Comparison Operators")
+
+print("a == b :", a == b)
+print("a != b :", a != b)
+print("a > b  :", a > b)
+print("a < b  :", a < b)
+print("a >= b :", a >= b)
+print("a <= b :", a <= b)
+
+# 3. Assignment Operators
+print("\n3. Assignment Operators")
+
+x = 10
+print("Initial value:", x)
+
+x += 5
+print("After x += 5 :", x)
+
+x -= 3
+print("After x -= 3 :", x)
+
+x *= 2
+print("After x *= 2 :", x)
+
+x /= 4
+print("After x /= 4 :", x)
+
+# 4. Logical Operators
+print("\n4. Logical Operators")
+
+p = True
+q = False
+
+print("p and q :", p and q)
+print("p or q  :", p or q)
+print("not p   :", not p)
+
+# 5. Membership Operators
+print("\n5. Membership Operators")
+
+text = "Python Programming"
+
+print("'Python' in text :", "Python" in text)
+print("'Java' not in text :", "Java" not in text)
+
+# 6. Identity Operators
+print("\n6. Identity Operators")
+
+list1 = [1, 2, 3]
+list2 = list1
+list3 = [1, 2, 3]
+
+print("list1 is list2 :", list1 is list2)
+print("list1 is list3 :", list1 is list3)
+print("list1 is not list3 :", list1 is not list3)
+
+# End of Program
+print("\n===== END OF PROGRAM =====")
