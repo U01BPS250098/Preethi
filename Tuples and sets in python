@@ -1,0 +1,282 @@
+Tuples and Sets in Python (In-Depth Notes)
+1. Tuples in Python
+Definition
+A tuple is an ordered collection of items. It is immutable, meaning once created, its values cannot be changed.
+Features
+Ordered
+Immutable (cannot modify)
+Allows duplicate values
+Can store different data types
+Faster than lists
+Written using parentheses ()
+Syntax
+my_tuple = (10, 20, 30, 40)
+print(my_tuple)
+Output
+(10, 20, 30, 40)
+Creating Tuples
+Empty Tuple
+t = ()
+print(t)
+Single Element Tuple
+A comma is required.
+t = (5,)
+print(t)
+Multiple Elements
+t = (1, 2, 3, 4)
+print(t)
+Mixed Data Types
+t = (10, "Python", 3.14, True)
+print(t)
+Accessing Tuple Elements
+Indexing
+t = ("Apple", "Banana", "Orange")
+
+print(t[0])
+print(t[1])
+print(t[2])
+Output
+Apple
+Banana
+Orange
+Negative Indexing
+print(t[-1])
+print(t[-2])
+Output
+Orange
+Banana
+Tuple Slicing
+t = (10, 20, 30, 40, 50)
+
+print(t[1:4])
+print(t[:3])
+print(t[2:])
+Output
+(20, 30, 40)
+(10, 20, 30)
+(30, 40, 50)
+Tuple Operations
+Concatenation
+a = (1, 2)
+b = (3, 4)
+
+print(a + b)
+Output
+(1, 2, 3, 4)
+Repetition
+t = (5,)
+
+print(t * 4)
+Output
+(5, 5, 5, 5)
+Tuple Methods
+count()
+Counts occurrences.
+t = (1, 2, 3, 2, 2)
+
+print(t.count(2))
+Output
+3
+index()
+Returns the index of the first occurrence.
+t = (10, 20, 30)
+
+print(t.index(20))
+Output
+1
+Built-in Functions
+t = (10, 20, 30)
+
+print(len(t))
+print(max(t))
+print(min(t))
+print(sum(t))
+Output
+3
+30
+10
+60
+Tuple Packing
+student = ("Preethi", 20, "BCA")
+print(student)
+Output
+('Preethi', 20, 'BCA')
+Tuple Unpacking
+name, age, course = ("Preethi", 20, "BCA")
+
+print(name)
+print(age)
+print(course)
+Output
+Preethi
+20
+BCA
+Advantages of Tuples
+Faster than lists
+Uses less memory
+Safe because data cannot change
+Can be used as dictionary keys
+Disadvantages
+Cannot modify elements
+Cannot add or remove items directly
+2. Sets in Python
+Definition
+A set is an unordered collection of unique elements.
+Features
+Unordered
+Mutable
+No duplicate values
+Does not support indexing
+Written using curly braces {}
+Creating Sets
+s = {10, 20, 30}
+
+print(s)
+Empty Set
+s = set()
+print(s)
+Duplicate Values
+s = {1, 2, 2, 3, 4, 4}
+
+print(s)
+Output
+{1, 2, 3, 4}
+Adding Elements
+add()
+s = {10, 20}
+
+s.add(30)
+
+print(s)
+update()
+s = {1, 2}
+
+s.update([3, 4, 5])
+
+print(s)
+Removing Elements
+remove()
+s = {10, 20, 30}
+
+s.remove(20)
+
+print(s)
+discard()
+s = {10, 20}
+
+s.discard(30)
+
+print(s)
+(No error if the element is absent.)
+pop()
+s = {1, 2, 3}
+
+print(s.pop())
+print(s)
+(Removes a random element.)
+clear()
+s = {1, 2, 3}
+
+s.clear()
+
+print(s)
+Output
+set()
+Set Operations
+Union
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A | B)
+print(A.union(B))
+Output
+{1, 2, 3, 4, 5}
+Intersection
+print(A & B)
+print(A.intersection(B))
+Output
+{3}
+Difference
+print(A - B)
+Output
+{1, 2}
+Symmetric Difference
+print(A ^ B)
+Output
+{1, 2, 4, 5}
+Membership Operators
+s = {10, 20, 30}
+
+print(20 in s)
+print(50 in s)
+Output
+True
+False
+Set Methods
+s = {1, 2, 3}
+
+print(len(s))
+print(max(s))
+print(min(s))
+print(sum(s))
+Output
+3
+3
+1
+6
+Frozen Set
+A frozenset is an immutable version of a set.
+fs = frozenset([1, 2, 3])
+
+print(fs)
+Output
+frozenset({1, 2, 3})
+Advantages of Sets
+Removes duplicate values automatically
+Very fast searching
+Supports mathematical set operations
+Efficient for membership testing
+Disadvantages of Sets
+Unordered
+No indexing or slicing
+Duplicate values are not allowed
+Difference Between Tuple and Set
+Feature
+Tuple
+Set
+Order
+Ordered
+Unordered
+Mutable
+No
+Yes
+Duplicate Values
+Allowed
+Not allowed
+Indexing
+Supported
+Not supported
+Syntax
+()
+{}
+Slicing
+Supported
+Not supported
+Methods
+count(), index()
+add(), remove(), union(), intersection(), etc.
+Performance
+Faster for fixed data
+Faster for searching unique data
+Interview Questions
+What is a tuple in Python?
+Why are tuples immutable?
+What is the difference between a list and a tuple?
+What is a set in Python?
+Why are duplicate elements not allowed in a set?
+What is the difference between remove() and discard()?
+Explain union, intersection, difference, and symmetric difference.
+What is a frozenset?
+Can a tuple contain different data types?
+When should you use a tuple instead of a set?
+These notes are suitable for BCA students, GitHub upload, assignments, and exam preparation.
