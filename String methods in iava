@@ -1,0 +1,112 @@
+Java's String class provides many built-in methods for creating, comparing, searching, and manipulating strings. Here are the most commonly used ones:
+Method
+Description
+Example
+length()
+Returns the length of the string
+"Java".length() → 4
+charAt(int index)
+Returns the character at the specified index
+"Java".charAt(1) → 'a'
+substring(int beginIndex)
+Returns substring from the given index
+"Java".substring(2) → "va"
+substring(int begin, int end)
+Returns substring between indices
+"Java".substring(1,3) → "av"
+toUpperCase()
+Converts to uppercase
+"java".toUpperCase() → "JAVA"
+toLowerCase()
+Converts to lowercase
+"JAVA".toLowerCase() → "java"
+trim()
+Removes leading and trailing spaces
+" Hello ".trim() → "Hello"
+isEmpty()
+Checks if string is empty
+"".isEmpty() → true
+isBlank()
+Checks if string contains only whitespace
+"   ".isBlank() → true
+equals(String)
+Compares two strings
+"Java".equals("Java") → true
+equalsIgnoreCase(String)
+Compares ignoring case
+"java".equalsIgnoreCase("JAVA") → true
+compareTo(String)
+Lexicographically compares strings
+"abc".compareTo("abd") → -1
+contains(CharSequence)
+Checks if substring exists
+"Java".contains("av") → true
+startsWith(String)
+Checks prefix
+"Java".startsWith("Ja") → true
+endsWith(String)
+Checks suffix
+"Java".endsWith("va") → true
+indexOf(String)
+Returns first occurrence index
+"Java".indexOf("a") → 1
+lastIndexOf(String)
+Returns last occurrence index
+"Java".lastIndexOf("a") → 3
+replace(old, new)
+Replaces characters or substrings
+"Java".replace("a","o") → "Jovo"
+replaceAll(regex, replacement)
+Replaces using regular expression
+"a1b2".replaceAll("\\d","") → "ab"
+split(String regex)
+Splits string into an array
+"a,b,c".split(",")
+concat(String)
+Concatenates strings
+"Hello".concat(" World") → "Hello World"
+valueOf()
+Converts other data types to string
+String.valueOf(100) → "100"
+join(delimiter, elements)
+Joins strings
+String.join("-", "A","B","C") → "A-B-C"
+repeat(int count)
+Repeats the string
+"Hi".repeat(3) → "HiHiHi"
+Example Program
+public class StringMethodsDemo {
+    public static void main(String[] args) {
+        String str = " Hello Java ";
+
+        System.out.println(str.length());                // 12
+        System.out.println(str.trim());                  // Hello Java
+        System.out.println(str.toUpperCase());           // HELLO JAVA
+        System.out.println(str.toLowerCase());           // hello java
+        System.out.println(str.contains("Java"));        // true
+        System.out.println(str.substring(7));            // Java
+        System.out.println(str.replace("Java", "World"));// Hello World
+        System.out.println(str.startsWith(" "));         // true
+        System.out.println(str.endsWith(" "));           // true
+    }
+}
+Frequently Asked String Methods for Interviews
+length()
+charAt()
+substring()
+equals()
+equalsIgnoreCase()
+compareTo()
+contains()
+indexOf()
+replace()
+split()
+trim()
+toUpperCase()
+toLowerCase()
+startsWith()
+endsWith()
+isEmpty()
+isBlank()
+concat()
+These are the methods most commonly asked in Java programming exams and technical interviews.
