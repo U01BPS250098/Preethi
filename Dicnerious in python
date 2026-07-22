@@ -1,0 +1,262 @@
+Dictionaries in Python (In-Depth)
+A Dictionary in Python is a built-in data type used to store data in key-value pairs.
+Keys → Unique identifiers.
+Values → Data associated with the keys.
+Example:
+student = {
+    "name": "Preethi",
+    "age": 19,
+    "course": "BCA"
+}
+
+print(student)
+Output:
+{'name': 'Preethi', 'age': 19, 'course': 'BCA'}
+Features of Dictionary
+Stores data in key-value pairs.
+Mutable (can be changed).
+Keys must be unique.
+Values can be duplicated.
+Ordered (Python 3.7+).
+Can store different data types.
+Example:
+data = {
+    "name": "Ravi",
+    "age": 20,
+    "marks": 89.5,
+    "passed": True
+}
+
+print(data)
+Creating a Dictionary
+Method 1
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+print(student)
+Method 2
+student = dict(name="Preethi", age=19)
+
+print(student)
+Accessing Dictionary Values
+Using key
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+print(student["name"])
+Output:
+Preethi
+Using get()
+print(student.get("age"))
+Output:
+19
+If key doesn't exist
+print(student.get("city"))
+Output:
+None
+Adding New Elements
+student = {
+    "name": "Preethi"
+}
+
+student["age"] = 19
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 19}
+Updating Values
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+student["age"] = 20
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 20}
+Removing Elements
+pop()
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+student.pop("age")
+
+print(student)
+Output
+{'name': 'Preethi'}
+popitem()
+Removes the last inserted item.
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+student.popitem()
+
+print(student)
+del
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+del student["age"]
+
+print(student)
+clear()
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+student.clear()
+
+print(student)
+Output
+{}
+Dictionary Methods
+keys()
+Returns all keys.
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+print(student.keys())
+Output
+dict_keys(['name', 'age'])
+values()
+Returns all values.
+print(student.values())
+Output
+dict_values(['Preethi', 19])
+items()
+Returns key-value pairs.
+print(student.items())
+Output
+dict_items([('name', 'Preethi'), ('age', 19)])
+update()
+student = {
+    "name": "Preethi"
+}
+
+student.update({"age": 19})
+
+print(student)
+copy()
+student = {
+    "name": "Preethi"
+}
+
+new = student.copy()
+
+print(new)
+fromkeys()
+keys = ("a", "b", "c")
+
+d = dict.fromkeys(keys, 0)
+
+print(d)
+Output
+{'a': 0, 'b': 0, 'c': 0}
+setdefault()
+student = {
+    "name": "Preethi"
+}
+
+student.setdefault("age", 19)
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 19}
+Looping Through Dictionary
+Loop through keys
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+for key in student:
+    print(key)
+Loop through values
+for value in student.values():
+    print(value)
+Loop through key-value pairs
+for key, value in student.items():
+    print(key, value)
+Output
+name Preethi
+age 19
+Nested Dictionary
+students = {
+    "student1": {
+        "name": "Preethi",
+        "age": 19
+    },
+    "student2": {
+        "name": "Rahul",
+        "age": 20
+    }
+}
+
+print(students["student1"]["name"])
+Output
+Preethi
+Dictionary Comprehension
+square = {x: x*x for x in range(1,6)}
+
+print(square)
+Output
+{1:1, 2:4, 3:9, 4:16, 5:25}
+Important Rules
+Keys must be unique.
+Keys can be int, str, float, tuple, bool.
+Lists cannot be keys because they are mutable.
+Values can be of any data type.
+Dictionaries are mutable.
+Advantages
+Fast data lookup using keys.
+Easy to update and delete data.
+Stores complex data structures.
+Efficient for large datasets.
+Disadvantages
+Keys must be unique.
+Uses more memory than lists.
+Cannot access values by index.
+Real-Life Example
+student = {
+    "USN": "4XX23BC001",
+    "Name": "Preethi",
+    "Course": "BCA",
+    "Semester": 2,
+    "Marks": {
+        "Python": 92,
+        "Java": 88,
+        "English": 90
+    }
+}
+
+print("Student Name:", student["Name"])
+print("Python Marks:", student["Marks"]["Python"])
+Output
+Student Name: Preethi
+Python Marks: 92
+Viva/Exam Questions
+What is a dictionary in Python?
+What are key-value pairs?
+What is the difference between get() and []?
+Explain keys(), values(), and items().
+What is a nested dictionary?
+What is dictionary comprehension?
+Can dictionary keys be duplicated? (No)
+Can dictionary values be duplicated? (Yes)
+Is a dictionary mutable? (Yes)
+Differentiate a list and a dictionary.
+This covers the topic in detail and is suitable for BCA notes, exams, and GitHub documentation.
