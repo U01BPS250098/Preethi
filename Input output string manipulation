@@ -1,0 +1,155 @@
+Input, Output and String Manipulation in Python
+1. Input in Python
+Input means taking data from the user. Python uses the input() function.
+Syntax:
+variable = input("Enter value: ")
+Example:
+name = input("Enter your name: ")
+print("Hello", name)
+Output:
+Enter your name: Preethi
+Hello Preethi
+Note: input() always returns data as a string.
+Taking Integer Input
+age = int(input("Enter your age: "))
+print("Age:", age)
+Taking Float Input
+salary = float(input("Enter salary: "))
+print("Salary:", salary)
+2. Output in Python
+Output means displaying information to the screen using the print() function.
+Syntax:
+print(value)
+Example 1
+print("Welcome to Python")
+Output:
+Welcome to Python
+Example 2
+name = "Preethi"
+age = 20
+
+print("Name:", name)
+print("Age:", age)
+Output:
+Name: Preethi
+Age: 20
+3. String Manipulation in Python
+A string is a sequence of characters enclosed in single (' '), double (" "), or triple (''' ''') quotes.
+Example
+name = "Python"
+print(name)
+Common String Operations
+1. Concatenation (+)
+Combines two strings.
+first = "Hello"
+second = "World"
+
+result = first + " " + second
+print(result)
+Output:
+Hello World
+2. Repetition (*)
+Repeats a string.
+text = "Hi "
+print(text * 3)
+Output:
+Hi Hi Hi
+3. Length of String
+text = "Python"
+print(len(text))
+Output:
+6
+4. Accessing Characters (Indexing)
+text = "Python"
+
+print(text[0])
+print(text[3])
+Output:
+P
+h
+5. Slicing
+text = "Programming"
+
+print(text[0:6])
+print(text[3:8])
+print(text[-3:])
+Output:
+Progra
+gramm
+ing
+Important String Methods
+Uppercase
+text = "python"
+print(text.upper())
+Output:
+PYTHON
+Lowercase
+text = "PYTHON"
+print(text.lower())
+Output:
+python
+Capitalize
+text = "python programming"
+print(text.capitalize())
+Output:
+Python programming
+Title
+text = "python programming"
+print(text.title())
+Output:
+Python Programming
+Replace
+text = "I like Java"
+print(text.replace("Java", "Python"))
+Output:
+I like Python
+Find
+text = "Programming"
+print(text.find("gram"))
+Output:
+3
+Count
+text = "banana"
+print(text.count("a"))
+Output:
+3
+Strip
+text = "  Python  "
+print(text.strip())
+Output:
+Python
+Split
+text = "Python Java C++"
+print(text.split())
+Output:
+['Python', 'Java', 'C++']
+Join
+words = ["Python", "Java", "C++"]
+print("-".join(words))
+Output:
+Python-Java-C++
+Complete Example Program
+name = input("Enter your name: ")
+
+print("Original Name:", name)
+print("Upper:", name.upper())
+print("Lower:", name.lower())
+print("Length:", len(name))
+print("First Character:", name[0])
+print("Last Character:", name[-1])
+Sample Output
+Enter your name: Preethi
+
+Original Name: Preethi
+Upper: PREETHI
+Lower: preethi
+Length: 7
+First Character: P
+Last Character: i
+Viva/Exam Points
+Input: input() is used to take user input.
+Output: print() is used to display information.
+String: A sequence of characters enclosed in quotes.
+Common string operations: Concatenation, repetition, indexing, slicing.
+Important methods: upper(), lower(), title(), capitalize(), replace(), find(), count(), strip(), split(), join(), and len().
+This is a complete, exam-ready explanation suitable for BCA notes or GitHub documentation.
