@@ -1,0 +1,184 @@
+Operations in Python (Operators) – Easy Explanation
+Operators are symbols used to perform operations on variables and values.
+1. Arithmetic Operators
+Used for mathematical calculations.
+Operator
+Meaning
+Example
+Output
++
+Addition
+5 + 3
+8
+-
+Subtraction
+5 - 3
+2
+*
+Multiplication
+5 * 3
+15
+/
+Division
+5 / 2
+2.5
+//
+Floor Division
+5 // 2
+2
+%
+Modulus (Remainder)
+5 % 2
+1
+**
+Exponent (Power)
+5 ** 2
+25
+Example:
+a = 10
+b = 3
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+2. Assignment Operators
+Used to assign values.
+Operator
+Example
+Same As
+=
+a = 5
+Assign 5
++=
+a += 2
+a = a + 2
+-=
+a -= 2
+a = a - 2
+*=
+a *= 2
+a = a * 2
+/=
+a /= 2
+a = a / 2
+%=
+a %= 2
+a = a % 2
+Example:
+a = 10
+a += 5
+print(a)
+Output:
+15
+3. Comparison Operators
+Used to compare values.
+Operator
+Meaning
+==
+Equal to
+!=
+Not equal to
+>
+Greater than
+<
+Less than
+>=
+Greater than or equal to
+<=
+Less than or equal to
+Example:
+a = 10
+b = 5
+
+print(a > b)
+print(a == b)
+print(a != b)
+Output:
+True
+False
+True
+4. Logical Operators
+Used to combine conditions.
+Operator
+Meaning
+and
+Both conditions must be True
+or
+At least one condition is True
+not
+Reverses the result
+Example:
+a = 10
+b = 5
+
+print(a > b and b < 10)
+print(a < b or b < 10)
+print(not(a > b))
+5. Identity Operators
+Checks whether two variables refer to the same object.
+Operator
+Meaning
+is
+Same object
+is not
+Different objects
+Example:
+a = [1, 2]
+b = a
+
+print(a is b)
+Output:
+True
+6. Membership Operators
+Checks whether a value exists in a sequence.
+Operator
+Meaning
+in
+Present
+not in
+Not present
+Example:
+name = "Python"
+
+print("P" in name)
+print("z" not in name)
+Output:
+True
+True
+7. Bitwise Operators
+Work on binary numbers.
+Operator
+Meaning
+&
+AND
+`
+`
+^
+XOR
+~
+NOT
+<<
+Left Shift
+>>
+Right Shift
+Example:
+a = 5
+b = 3
+
+print(a & b)
+print(a | b)
+Interview / Exam Definition
+Python operators are special symbols that perform operations on variables and values, such as arithmetic calculations, comparisons, logical operations, assignments, membership tests, identity checks, and bitwise operations.
+Types of Python Operators
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+Identity Operators
+Membership Operators
+Bitwise Operators
+This is a complete, BCA exam-friendly explanation with definitions, tables, examples, and outputs.
