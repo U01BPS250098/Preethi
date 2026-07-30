@@ -1,0 +1,148 @@
+Dictionary in Python (Easy Explanation)
+A Dictionary in Python is a data type used to store data in key–value pairs.
+Think of it like a real dictionary:
+Key = Word
+Value = Meaning
+Syntax
+dictionary_name = {
+    "key1": value1,
+    "key2": value2,
+    "key3": value3
+}
+Example
+student = {
+    "name": "Preethi",
+    "age": 19,
+    "course": "BCA"
+}
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 19, 'course': 'BCA'}
+Characteristics of Dictionary
+Stores data in key-value pairs.
+Keys must be unique.
+Values can be duplicated.
+Dictionaries are mutable (can be changed).
+Created using {}.
+Accessing Values
+student = {
+    "name": "Preethi",
+    "age": 19,
+    "course": "BCA"
+}
+
+print(student["name"])
+print(student["age"])
+Output
+Preethi
+19
+Adding a New Item
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+student["course"] = "BCA"
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 19, 'course': 'BCA'}
+Updating a Value
+student = {
+    "name": "Preethi",
+    "age": 19
+}
+
+student["age"] = 20
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 20}
+Deleting an Item
+student = {
+    "name": "Preethi",
+    "age": 19,
+    "course": "BCA"
+}
+
+del student["course"]
+
+print(student)
+Output
+{'name': 'Preethi', 'age': 19}
+Dictionary Methods
+1. keys()
+Returns all keys.
+student = {"name":"Preethi","age":19}
+print(student.keys())
+2. values()
+Returns all values.
+print(student.values())
+3. items()
+Returns key-value pairs.
+print(student.items())
+4. get()
+Gets the value of a key safely.
+print(student.get("name"))
+5. update()
+Updates the dictionary.
+student.update({"course":"BCA"})
+print(student)
+6. pop()
+Removes a specified key.
+student.pop("age")
+print(student)
+7. clear()
+Removes all items.
+student.clear()
+print(student)
+Looping Through a Dictionary
+Print Keys
+student = {"name":"Preethi","age":19,"course":"BCA"}
+
+for key in student:
+    print(key)
+Print Values
+for value in student.values():
+    print(value)
+Print Keys and Values
+for key, value in student.items():
+    print(key, ":", value)
+Example Program
+student = {
+    "name": "Preethi",
+    "age": 19,
+    "course": "BCA"
+}
+
+print("Student Details")
+print("Name:", student["name"])
+print("Age:", student["age"])
+print("Course:", student["course"])
+
+student["college"] = "XYZ College"
+
+print("\nUpdated Dictionary")
+print(student)
+Output
+Student Details
+Name: Preethi
+Age: 19
+Course: BCA
+
+Updated Dictionary
+{'name': 'Preethi', 'age': 19, 'course': 'BCA', 'college': 'XYZ College'}
+Viva Questions
+What is a dictionary in Python?
+What are key-value pairs?
+Can dictionary keys be duplicated? (No)
+Can dictionary values be duplicated? (Yes)
+Is a dictionary mutable? (Yes)
+Which brackets are used to create a dictionary? (Curly braces {})
+Which method returns all keys? (keys())
+Which method returns all values? (values())
+Which method removes all items? (clear())
+Which method safely accesses a value? (get())
+Exam Definition (2 Marks)
+Dictionary: A dictionary is a mutable Python data structure that stores data as key-value pairs. It is created using curly braces {} and each key must be unique.
