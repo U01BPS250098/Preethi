@@ -1,0 +1,62 @@
+Entry Control Loop in Python
+Definition
+An Entry Control Loop is a loop in which the condition is checked before the loop body is executed. If the condition is True, the loop executes. If the condition is False, the loop stops immediately.
+Python has two entry control loops:
+while loop
+for loop
+1. While Loop
+Syntax
+while condition:
+    statements
+Example
+i = 1
+
+while i <= 5:
+    print(i)
+    i = i + 1
+Output
+1
+2
+3
+4
+5
+Explanation
+i = 1 initializes the variable.
+The condition i <= 5 is checked first.
+If the condition is True, the loop executes.
+i = i + 1 increments the value of i.
+The loop repeats until the condition becomes False.
+2. For Loop
+Syntax
+for variable in range(start, stop):
+    statements
+Example
+for i in range(1, 6):
+    print(i)
+Output
+1
+2
+3
+4
+5
+Explanation
+range(1, 6) generates numbers from 1 to 5.
+The for loop prints each number one by one.
+Why is it called an Entry Control Loop?
+It is called an Entry Control Loop because the condition is checked before entering the loop. If the condition is False, the loop body is not executed even once.
+Example
+i = 10
+
+while i < 5:
+    print(i)
+Output
+No Output
+The condition 10 < 5 is False, so the loop does not execute.
+Key Points
+The condition is checked before execution.
+The loop executes only when the condition is True.
+If the condition is False, the loop terminates immediately.
+while and for are Entry Control Loops in Python.
+Exam Definition (2 Marks)
+Entry Control Loop:
+An Entry Control Loop is a loop in which the condition is checked before the execution of the loop body. If the condition is true, the loop executes; otherwise, it terminates. In Python, while and for loops are entry control loops.
