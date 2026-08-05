@@ -1,0 +1,22 @@
+Here's a simple Python program that prints a greeting:
+# My first Python program
+
+print("Hello, World!")
+Another example: Add two numbers
+# Program to add two numbers
+
+num1 = 10
+num2 = 20
+
+sum = num1 + num2
+
+print("The sum is:", sum)
+Output:
+The sum is: 30
+If you're just starting with Python, I can also provide examples for:
+Variables and data types
+if statements
+for and while loops
+Functions
+Lists and dictionaries
+Object-Oriented Programming (OOP)
