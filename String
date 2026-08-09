@@ -1,0 +1,117 @@
+Sure 👍 Here’s a simple, exam-ready explanation of String Methods in Python.
+🐍 String Methods in Python
+A string is a sequence of characters written inside quotes.
+name = "Preethi"
+Python provides many built-in string methods to perform operations on strings.
+1. upper()
+Converts all letters to uppercase.
+name = "preethi"
+print(name.upper())
+Output: PREETHI
+2. lower()
+Converts all letters to lowercase.
+name = "PREETHI"
+print(name.lower())
+Output: preethi
+3. capitalize()
+Converts the first character to uppercase.
+name = "python"
+print(name.capitalize())
+Output: Python
+4. title()
+Converts the first letter of every word to uppercase.
+text = "python programming language"
+print(text.title())
+Output: Python Programming Language
+5. strip()
+Removes spaces from the beginning and end.
+text = "  Python  "
+print(text.strip())
+Output: Python
+6. replace()
+Replaces one part of a string with another.
+text = "I like Java"
+print(text.replace("Java", "Python"))
+Output: I like Python
+7. find()
+Returns the position (index) of a substring.
+text = "Python"
+print(text.find("t"))
+Output: 2
+8. count()
+Counts how many times a character or substring occurs.
+text = "banana"
+print(text.count("a"))
+Output: 3
+9. startswith()
+Checks whether a string starts with a particular value.
+text = "Python"
+print(text.startswith("Py"))
+Output: True
+10. endswith()
+Checks whether a string ends with a particular value.
+text = "Python"
+print(text.endswith("on"))
+Output: True
+11. split()
+Splits a string into a list.
+text = "I love Python"
+print(text.split())
+Output:
+['I', 'love', 'Python']
+12. join()
+Joins elements together using a specified separator.
+words = ["I", "love", "Python"]
+print(" ".join(words))
+Output:
+I love Python
+13. isalpha()
+Checks whether all characters are alphabets.
+text = "Python"
+print(text.isalpha())
+Output: True
+14. isdigit()
+Checks whether all characters are digits.
+num = "12345"
+print(num.isdigit())
+Output: True
+15. isalnum()
+Checks whether all characters are alphabets or numbers.
+text = "Python123"
+print(text.isalnum())
+Output: True
+⭐ Important String Methods
+Method
+Use
+upper()
+Converts to uppercase
+lower()
+Converts to lowercase
+capitalize()
+First letter uppercase
+title()
+First letter of each word uppercase
+strip()
+Removes extra spaces
+replace()
+Replaces text
+find()
+Finds position
+count()
+Counts occurrence
+split()
+Converts string into list
+join()
+Joins strings
+startswith()
+Checks starting text
+endswith()
+Checks ending text
+isalpha()
+Checks alphabets
+isdigit()
+Checks numbers
+isalnum()
+Checks alphabets/numbers
+Easy definition for exam:
+String methods are built-in Python functions used to perform different operations on strings, such as changing case, searching, replacing, splitting, and checking characters.
