@@ -1,0 +1,18 @@
+Parameters in Python
+Parameter andre function ge input/value pass madoke use maduva variable.
+Example:
+def add(a, b):
+    return a + b
+
+print(add(10, 20))
+Here:
+a and b → Parameters
+10 and 20 → Arguments
+Simple definition:
+👉 Parameter is a variable used in a function to receive values.
+Example:
+def greet(name):
+    print("Hello", name)
+
+greet("Preethi")
+Here name is the parameter, and "Preethi" is the argument.
